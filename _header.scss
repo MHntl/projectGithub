@@ -1,0 +1,55 @@
+.header {
+    background-color: $header-bg;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    &-logo {
+        margin-right: 16px;
+        svg {
+            width: 32px;
+            height: 32px;
+            color: white;
+        }
+    }
+    &-search {
+        position: relative;
+        svg {
+            position: absolute;
+            right: 25px;
+            top: 33%;
+            // top: 15px;
+            color: #fff;
+        }
+        input {
+            background-color: hsla(0, 0, 100%, 0.125);
+            width: 300px;
+            height: 30px;
+            padding: 7px;
+            font-size: 12px;
+            border: none;
+            margin-right: 16px;
+            border-radius: 3px;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    }
+    &-links {
+        a {
+            color: #fff;
+            margin-right: 16px;
+            font-family: $my-font;
+            font-size: 14px;
+        }
+    }
+    &-rightLinks{
+        margin-left: auto;
+        
+
+        svg{
+            color: #ccc;
+            margin-right: 10px;
+
+        }
+    }
+}
